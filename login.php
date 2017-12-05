@@ -27,29 +27,62 @@ header("Location: a1.php");
 ?>
 <html>
 <head>
-	<title>HI CHAMP	!</title>
+	<title>RMD CAMPUS PORTAL!</title>
 <style> 
 body {
-    background: url("images/q.jpg");
+    background: url("images/coverpage.jpg");
     background-size: 100% 200%;
     background-repeat: no-repeat;
     padding-top: 40px;
 }
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 30%;
+    padding: 8px 7px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: auto;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: auto;
+    border-radius: 10px;
+}
+
+.container {
+    padding: 1px;
+}
+
+/*span.psw {
+    float: right;
+    padding-top: auto;
+}*/
 </style>
-
-	
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" >
-
-<link rel="stylesheet" href="styles.css" >
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
-<body >
+<body>
 <br>
 <br>
 <br>
@@ -58,15 +91,18 @@ body {
 
 <div class="container">
       <form class="form-signin" method="POST">
+	    <div class="imgcontainer">
+    <img src="images/user.png" alt="Avatar" class="avatar">
+  </div>
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
-      <center>  <h2 class="form-signin-heading">Login</h2>  
+      <center>  <h2 class="form-signin-heading" >Login</h2>  
         <div class="input-group">
-	  <span class="input-group-addon" id="basic-addon1">@</span>
+	  <span class="input-group-addon" id="basic-addon1">Username</span>
 	  <input type="text" name="username" class="form-control" placeholder="Username" required>
 	</div>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
         
       </form>
 </div>
