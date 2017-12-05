@@ -33,47 +33,47 @@ body {
     background: url("images/coverpage.jpg");
     background-size: 100% 200%;
     background-repeat: no-repeat;
-    padding-top: 40px;
+    padding-top: 0;
 }
 form {
-    border: 3px solid #f1f1f1;
+    border: 3% solid #f1f1f1;
 }
 
 input[type=text], input[type=password] {
-    width: 30%;
-    padding: 8px 7px;
-    margin: 8px 0;
+    width: 20%;
+    padding: 0.6% 0.3%;
+    margin: 1% 0;
     display: inline-block;
-    border: 1px solid #ccc;
+    border: 10% solid #ccc;
     box-sizing: border-box;
 }
 
 button {
-    background-color: #4CAF50;
-    color: none;
-    padding: 14px 20px;
-    margin: 8px 0;
+    background-color: "BLUE";
+    color: "Yellow";
+    padding: 0.6% 0.3%;
+    margin: 0.8% 0;
     border: none;
     cursor: pointer;
-    width: auto;
+    width: 10%;
 }
 
 button:hover {
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin: 0.5% 0 0.5% 0;
 }
 
 img.avatar {
-    width: auto;
-    border-radius: 10px;
+    width: 15%;
+    border-radius: 5%;
 }
 
 .container {
-    padding: 1px;
+    padding: 2%;
 }
 
 /*span.psw {
@@ -95,14 +95,14 @@ img.avatar {
     <img src="images/user.png" alt="Avatar" class="avatar">
   </div>
       <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
-      <center>  <h2 class="form-signin-heading" >Login</h2>  
+      <center>  <h2 class="form-signin-heading" >CAMPUS PORTAL</h2>  
         <div class="input-group">
 	  <span class="input-group-addon" id="basic-addon1">Username</span>
 	  <input type="text" name="username" class="form-control" placeholder="Username" required>
 	</div>
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Password" required><br>
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">LOGIN</button>
         
       </form>
 </div>
